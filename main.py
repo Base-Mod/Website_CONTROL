@@ -34,6 +34,7 @@ app.include_router(auth.router)
 app.include_router(devices.router)
 app.include_router(power.router)
 app.include_router(alerts.router)
+app.include_router(devices.router)
 
 # Mount static files
 app.mount("/static", StaticFiles(directory="static"), name="static")
